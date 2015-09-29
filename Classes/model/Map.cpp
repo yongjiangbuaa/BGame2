@@ -28,4 +28,9 @@ Map* Map::shared()
 	return s_sharedMap;
 }
 
+Role* getPVE(int idx)
+{
+    return new Role("json data");
+}
+
 NS_B_END

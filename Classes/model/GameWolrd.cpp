@@ -18,11 +18,6 @@ GameWorld::~GameWorld()
 
 GameWorld::GameWorld()
 {
-		string str= GameWorld::shared()->loadUserData("user1001.json");
-		this->InitializeGameWorld(str);
-		mainOpList.push_back("Role");
-		mainOpList.push_back("Ventory");
-		mainOpList.push_back("Map");
 }
 
 GameWorld* GameWorld::shared()
@@ -34,10 +29,16 @@ GameWorld* GameWorld::shared()
 	return s_sharedGameWorld;
 }
 
-
-
-void GameWorld::InitializeGameWorld(string a)
+string GameWorld::loadUserData()
 {
+    return "adsfsdf";
+}
+
+
+void GameWorld::InitializeGameWorld()
+{
+    string a= GameWorld::shared()->loadUserData();
+
 	// 用数据初始化各个模型Role，Ventory,PVE,PVP
 	s_sharedRole = new Role(a);
 	s_sharedVentory = new Ventory(a);
@@ -58,9 +59,10 @@ void GameWorld::InitializeGameWorld(string a)
 
 void GameWorld::SerializeGameWorld()
 {
-		abc::GameWorld::shared()->setDataToFile(gamedata,"user1001.json");//保存一个战斗回合的数据
+		this->saveUserData();//保存一个战斗回合的数据
 
 }
+
 
 void GameWorld::uiController(string op)
 {
@@ -68,7 +70,7 @@ void GameWorld::uiController(string op)
 	//this->opList = array<string>("fight","equip");
 	//GameWorld::shared()->mainOpList = array<string>("Role","Ventory","Map");
 
-
+/**
 	if(BArrayUtil.in_array(op,this->opList )) 
 	{
 		s_sharedRole->op();
@@ -87,6 +89,7 @@ void GameWorld::uiController(string op)
 			.append(mainOpList.toString()));
 
 	}
+ **/
 }
 
 NS_B_END

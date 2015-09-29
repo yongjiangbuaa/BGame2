@@ -117,7 +117,7 @@
 		1D6058910D05DD3D006BFB54 /* BGame2-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BGame2-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		223F113A1BBA2FBA00182984 /* BBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BBase.cpp; path = model/BBase.cpp; sourceTree = "<group>"; };
-		223F113B1BBA2FBA00182984 /* BBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBase.h; path = model/BBase.h; sourceTree = "<group>"; };
+		223F113B1BBA2FBA00182984 /* BBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = BBase.h; path = model/BBase.h; sourceTree = "<group>"; };
 		223F113C1BBA2FBA00182984 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = model/common.h; sourceTree = "<group>"; };
 		223F113D1BBA2FBA00182984 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = model/game.cpp; sourceTree = "<group>"; };
 		223F113E1BBA2FBA00182984 /* GameClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameClient.cpp; path = model/GameClient.cpp; sourceTree = "<group>"; };

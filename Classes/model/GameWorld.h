@@ -15,13 +15,15 @@ public:
 		 StringArray opList;
 		~GameWorld();
 		static GameWorld* shared();
-		void InitializeGameWorld(string a);
+		void InitializeGameWorld();
 		bool switchUI(string uiName);
 		void SerializeGameWorld();
 
-		void uiController(string op);
-private:	
+		void uiController(string op);//命令行控制界面用
+private:
 	GameWorld();
+    string loadUserData();
+    void saveUserData();
 };
 
 

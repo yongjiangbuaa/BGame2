@@ -2,13 +2,14 @@
 #define __B__MAP__
 
 #include "common.h"
-
+#include "Role.h"
 NS_B_BEGIN
 class Map : BBase {
 	public:
 		~Map();
 		static	Map* shared();
 				Map(string a);
+    Role* getPVE(int idx);
 
 	private:
 		Map();
