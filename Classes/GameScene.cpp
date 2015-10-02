@@ -19,10 +19,6 @@ NS_B_BEGIN
 
 static GameScene* s_sharedGameScene = NULL;
 
-GameScene::GameScene()
-{
-    
-}
 
 Scene* GameScene::createScene()
 {
@@ -32,6 +28,7 @@ Scene* GameScene::createScene()
     // 'layer' is an autorelease object
     auto layer = GameScene::create();
     
+    s_sharedGameScene = layer;
     // add layer as a child to scene
     scene->addChild(layer);
     
@@ -40,11 +37,12 @@ Scene* GameScene::createScene()
 
 }
 
+
 GameScene* GameScene::shared()
 {
     if(!s_sharedGameScene)
     {
-        s_sharedGameScene =  new GameScene();
+        assert("singleton GameScene is null!! Not init by director");
     }
     
     return s_sharedGameScene;
@@ -66,8 +64,9 @@ bool GameScene::init()
     //把节点挂在树上
     m_CenterContainer->addChild(m_CityView);
     m_CenterContainer->addChild(m_RoleView);
-    this->addChild(m_BottomUI);
     this->addChild(m_CenterContainer);
+    this->addChild(m_BottomUI);
+
 
     //posision
     m_BottomUI->setPosition(Vect::ZERO);

@@ -13,6 +13,10 @@ NS_B_BEGIN
 
 bool CityView::init()
 {
+    if ( !UIBase::init() )
+    {
+        return false;
+    }
     return true;
 }
 
