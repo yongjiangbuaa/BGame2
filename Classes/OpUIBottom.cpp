@@ -23,29 +23,24 @@ bool OpUIBottom::init()
         return false;
     }
     
+    //色块
+    LayerColor* color = LayerColor::create(Color4B::GREEN,100,100);
+    this->addChild(color);
+    /**
     
+    city = MenuItemSprite::create(LayerColor::create(Color4B::GREEN,50,50),LayerColor::create(Color4B::BLUE,50,50));
     
-    //Size visibleSize = Director::getInstance()->getVisibleSize();
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
-    city = MenuItemImage::create(
-                                           "CloseNormal.png",
-                                           "CloseSelected.png",
-                                           CC_CALLBACK_1(OpUIBottom::menuCityCallback, this));
-    role = MenuItemImage::create(
-                                 "CloseNormal.png",
-                                 "CloseSelected.png",
-                                 CC_CALLBACK_1(OpUIBottom::menuRoleCallback, this));
+    role = MenuItemSprite::create(LayerColor::create(Color4B::GREEN,50,50),LayerColor::create(Color4B::BLUE,50,50));
 
     city->setPosition(0,0);
     role->setPosition(100,0);
     
     // create menu, it's an autorelease object
     auto menu = Menu::create(city,role, NULL);
-    menu->setPosition(Vec2::ZERO);
+    menu->setPosition(Vect::ZERO);
     this->addChild(menu, 1);
 
-    
+    **/
     
     return true;
 }

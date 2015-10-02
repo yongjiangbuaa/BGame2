@@ -17,6 +17,11 @@ bool CityView::init()
     {
         return false;
     }
+    //色块
+    LayerColor* color = LayerColor::create(Color4B::GRAY, 300, 300);
+    this->addChild(color);
+    return true;
+
     return true;
 }
 

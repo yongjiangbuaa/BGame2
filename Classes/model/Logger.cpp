@@ -1,15 +1,17 @@
 #include "Logger.h"
-
+#include <stdio.h>
 NS_B_BEGIN
 
 void Logger::debug(string* a )
 {
-	 	cout << a << "\n";
+        CCLOG("%s",a->c_str());
+	 	//cout << a << "\n";
 }
 
 void Logger::debug(char const* a )
 {
-	 	cout << a << "\n";
+    CCLOG("%s",a);
+	 	//cout << a << "\n";
 }
 
 
@@ -17,7 +19,9 @@ void Logger::debug(char const* a )
  {
 	for( int key : a)
 	{
-		cout << key << "\n";
+        CCLOG("%d",key);
+
+		//cout << key << "\n";
 	}
 }
 NS_B_END

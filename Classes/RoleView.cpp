@@ -18,6 +18,11 @@ bool RoleView::init()
     {
         return false;
     }
+    
+    
+    //色块
+    LayerColor* color = LayerColor::create(Color4B::BLUE,200,200);
+    this->addChild(color);
     return true;
 }
 
