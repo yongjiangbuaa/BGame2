@@ -10,17 +10,18 @@
 #define __BGame2__CityView__
 
 #include "common.h"
+#include "UIBase.h"
 NS_B_BEGIN
-class CityView : public cocos2d::Layer
+class CityView : public UIBase
 {
 public:
-    static cocos2d::Scene* createScene();
-    
     virtual bool init();
-    
-    
     // implement the "static create()" method manually
     CREATE_FUNC(CityView);
+
+    virtual void initData();
+    
+    
 };
 NS_B_END
 #endif /* defined(__BGame2__CityView__) */

@@ -2,7 +2,6 @@
 #include "GameScene.h"
 
 USING_NS_CC;
-NS_B_BEGIN
 static cocos2d::Size designResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
@@ -76,7 +75,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // create a scene. it's an autorelease object
     //auto scene = HelloWorld::createScene();
-    auto scene = GameScene::createScene();
+    auto scene = abc::GameScene::createScene();
     
 
     // run
@@ -101,4 +100,4 @@ void AppDelegate::applicationWillEnterForeground() {
     // SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }
 
-NS_B_END
+

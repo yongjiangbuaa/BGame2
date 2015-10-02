@@ -7,3 +7,19 @@
 //
 
 #include "RoleView.h"
+
+
+
+NS_B_BEGIN
+
+bool RoleView::init()
+{
+    return true;
+}
+
+void RoleView::initData()
+{
+    
+}
+
+NS_B_END

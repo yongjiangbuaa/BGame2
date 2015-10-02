@@ -12,11 +12,33 @@
 #include "CityView.h"
 #include "RoleView.h"
 #include "Role.h"
+#include "UIBase.h"
 
 
 NS_B_BEGIN
 
 static GameScene* s_sharedGameScene = NULL;
+
+GameScene::GameScene()
+{
+    
+}
+
+Scene* GameScene::createScene()
+{
+    // 'scene' is an autorelease object
+    auto scene = Scene::create();
+    
+    // 'layer' is an autorelease object
+    auto layer = GameScene::create();
+    
+    // add layer as a child to scene
+    scene->addChild(layer);
+    
+    // return the scene
+    return scene;
+
+}
 
 GameScene* GameScene::shared()
 {
@@ -31,7 +53,7 @@ GameScene* GameScene::shared()
 bool GameScene::init()
 {
     GameWorld::shared()->InitializeGameWorld();
-
+    m_CenterContainer = Node::create();
     this->m_BottomUI = OpUIBottom::create();
     this->m_CityView = CityView::create();
     this->m_RoleView = RoleView::create();
@@ -42,13 +64,13 @@ bool GameScene::init()
     m_RoleView->setVisible(true);
     
     //把节点挂在树上
-    m_CenterContainer->add(m_CityView);
-    m_CenterContainer->add(m_RoleView);
+    m_CenterContainer->addChild(m_CityView);
+    m_CenterContainer->addChild(m_RoleView);
     this->addChild(m_BottomUI);
     this->addChild(m_CenterContainer);
 
     //posision
-    m_BottomUI->setPosition(Vect2::ZERO);
+    m_BottomUI->setPosition(Vect::ZERO);
     m_CenterContainer->setPosition(0,0);
     
     
@@ -62,22 +84,15 @@ bool GameScene::init()
 void GameScene::showUI(UIBase* ui)
 {
     
-    ui->initData();
+    ui->initData();//如果没初始化数据则初始化，已初始化的则更新数据
     ui->setVisible(true);
-    hideOther();
-    
-    switch (i) {
-        case UIENUM::RoleView:
-            //界面初始化数值
-            m_RoleView->initData(Role::shared());
-            //此界面显示 其他界面隐藏
-            m_RoleView->setVisible(true);
-            hideOther();
-            break;
-            
-        default:
-            break;
+    //此界面显示 其他界面隐藏
+
+    for(Node* uiTmp : m_CenterContainer->getChildren())
+    {
+        if( uiTmp != ui) uiTmp->setVisible(false);
     }
+    
 }
 
 

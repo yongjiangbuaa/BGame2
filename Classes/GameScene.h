@@ -10,8 +10,7 @@
 #define __BGame2__GameScene__
 
 #include "common.h"
-#include <stdio.h>
-
+#include "UIBase.h"
 NS_B_BEGIN
 
 class GameScene : public cocos2d::Layer
@@ -22,11 +21,11 @@ public:
     CREATE_FUNC(GameScene);
     virtual bool init();
 
-    Node* m_CurrentUI;
+    UIBase* m_CurrentUI;
     Node* m_BottomUI;
-    Node* m_CityView;
-    Node* m_RoleView;
-    
+    UIBase* m_CityView;
+    UIBase* m_RoleView;
+    Node* m_CenterContainer;//仅仅用于统一位置
     static GameScene* shared();
     void showUI(UIBase* ui);
 private:

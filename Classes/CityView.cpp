@@ -7,3 +7,19 @@
 //
 
 #include "CityView.h"
+
+
+NS_B_BEGIN
+
+bool CityView::init()
+{
+    return true;
+}
+
+void CityView::initData()
+{
+    
+}
+
+
+NS_B_END

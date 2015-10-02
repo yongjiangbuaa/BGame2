@@ -28,7 +28,7 @@ Map* Map::shared()
 	return s_sharedMap;
 }
 
-Role* getPVE(int idx)
+Role* Map::getPVE(int idx)
 {
     return new Role("json data");
 }

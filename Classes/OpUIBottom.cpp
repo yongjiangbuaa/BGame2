@@ -25,7 +25,7 @@ bool OpUIBottom::init()
     
     
     
-    Size visibleSize = Director::getInstance()->getVisibleSize();
+    //Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
     city = MenuItemImage::create(
@@ -53,12 +53,12 @@ bool OpUIBottom::init()
 
 void OpUIBottom::menuCityCallback(cocos2d::Ref *pSender)
 {
-    GameScene::shared()->showUI(City);
+    GameScene::shared()->showUI(GameScene::shared()->m_CityView);
 }
 
-void OpUIBottom::menuRoleCallback(cocos2d::Ref *pSender）
+void OpUIBottom::menuRoleCallback(cocos2d::Ref *pSender)
 {
-    GameScene::shared()->showUI(Role);
+    GameScene::shared()->showUI(GameScene::shared()->m_RoleView);
     
 }
 
