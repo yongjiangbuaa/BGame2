@@ -22,6 +22,7 @@
 		223F11591BBB8A1F00182984 /* OpUIBottom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 223F11571BBB8A1F00182984 /* OpUIBottom.cpp */; };
 		223F115C1BBBC5B300182984 /* BattlePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 223F115A1BBBC5B300182984 /* BattlePlayer.cpp */; };
 		223F11631BBBD6B400182984 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 223F11611BBBD6B400182984 /* GameScene.cpp */; };
+		22DFC3EF1BBE105C0028D868 /* CityView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3ED1BBE105C0028D868 /* CityView.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
@@ -144,6 +145,8 @@
 		223F115B1BBBC5B300182984 /* BattlePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattlePlayer.h; sourceTree = "<group>"; };
 		223F11611BBBD6B400182984 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		223F11621BBBD6B400182984 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		22DFC3ED1BBE105C0028D868 /* CityView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CityView.cpp; sourceTree = "<group>"; };
+		22DFC3EE1BBE105C0028D868 /* CityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityView.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		46880B7619C43A67006E1F66 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
@@ -297,8 +300,6 @@
 				223F11481BBA2FBA00182984 /* UI.h */,
 				223F11491BBA2FBA00182984 /* Ventory.cpp */,
 				223F114A1BBA2FBA00182984 /* Ventory.h */,
-				223F115A1BBBC5B300182984 /* BattlePlayer.cpp */,
-				223F115B1BBBC5B300182984 /* BattlePlayer.h */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -306,12 +307,23 @@
 		223F11601BBBC9C300182984 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				223F115A1BBBC5B300182984 /* BattlePlayer.cpp */,
+				223F115B1BBBC5B300182984 /* BattlePlayer.h */,
 				223F11541BBB860D00182984 /* RoleView.cpp */,
 				223F11551BBB860D00182984 /* RoleView.h */,
 				223F11571BBB8A1F00182984 /* OpUIBottom.cpp */,
 				223F11581BBB8A1F00182984 /* OpUIBottom.h */,
+				22DFC3ED1BBE105C0028D868 /* CityView.cpp */,
+				22DFC3EE1BBE105C0028D868 /* CityView.h */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		22DFC3EC1BBE0ECE0028D868 /* util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -370,6 +382,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				22DFC3EC1BBE0ECE0028D868 /* util */,
 				223F11611BBBD6B400182984 /* GameScene.cpp */,
 				223F11621BBBD6B400182984 /* GameScene.h */,
 				223F11601BBBC9C300182984 /* view */,
@@ -579,6 +592,7 @@
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				223F11631BBBD6B400182984 /* GameScene.cpp in Sources */,
 				223F11501BBA2FBA00182984 /* Map.cpp in Sources */,
+				22DFC3EF1BBE105C0028D868 /* CityView.cpp in Sources */,
 				223F11521BBA2FBA00182984 /* Ventory.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				223F115C1BBBC5B300182984 /* BattlePlayer.cpp in Sources */,

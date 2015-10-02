@@ -18,7 +18,16 @@ NS_B_BEGIN
 
 static GameScene* s_sharedGameScene = NULL;
 
-
+GameScene* GameScene::shared()
+{
+    if(!s_sharedGameScene)
+    {
+        s_sharedGameScene =  new GameScene();
+    }
+    
+    return s_sharedGameScene;
+    
+}
 bool GameScene::init()
 {
     GameWorld::shared()->InitializeGameWorld();
@@ -44,14 +53,19 @@ bool GameScene::init()
     
     
     //跳往默认界面
-    showUI(UIENUM::RoleView);
+    showUI(m_RoleView);
     
     return true;
 }
 
 
-void GameScene::showUI(int i)
+void GameScene::showUI(UIBase* ui)
 {
+    
+    ui->initData();
+    ui->setVisible(true);
+    hideOther();
+    
     switch (i) {
         case UIENUM::RoleView:
             //界面初始化数值

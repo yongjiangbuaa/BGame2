@@ -1,8 +1,8 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+#include "GameScene.h"
 
 USING_NS_CC;
-
+NS_B_BEGIN
 static cocos2d::Size designResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
@@ -100,3 +100,5 @@ void AppDelegate::applicationWillEnterForeground() {
     // if you use SimpleAudioEngine, it must resume here
     // SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }
+
+NS_B_END

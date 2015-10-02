@@ -7,7 +7,7 @@
 //
 
 #include "OpUIBottom.h"
-
+#include "GameScene.h"
 
 //操作界面。随不同的情景有不同的按钮
 

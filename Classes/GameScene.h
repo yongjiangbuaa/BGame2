@@ -18,14 +18,20 @@ class GameScene : public cocos2d::Layer
 {
 public:
     static cocos2d::Scene* createScene();
+    // implement the "static create()" method manually
+    CREATE_FUNC(GameScene);
+    virtual bool init();
+
     Node* m_CurrentUI;
     Node* m_BottomUI;
     Node* m_CityView;
     Node* m_RoleView;
-    virtual bool init();
     
-    // implement the "static create()" method manually
-    CREATE_FUNC(GameScene);
+    static GameScene* shared();
+    void showUI(UIBase* ui);
+private:
+    GameScene();
+    
 };
 
 NS_B_END
