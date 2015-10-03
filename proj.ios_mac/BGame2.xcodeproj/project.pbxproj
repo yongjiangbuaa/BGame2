@@ -24,6 +24,7 @@
 		223F11631BBBD6B400182984 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 223F11611BBBD6B400182984 /* GameScene.cpp */; };
 		22DFC3EF1BBE105C0028D868 /* CityView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3ED1BBE105C0028D868 /* CityView.cpp */; };
 		22DFC3F21BBE18880028D868 /* UIBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F01BBE18880028D868 /* UIBase.cpp */; };
+		22DFC3F51BBFD6FA0028D868 /* BButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F31BBFD6FA0028D868 /* BButton.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
@@ -150,6 +151,8 @@
 		22DFC3EE1BBE105C0028D868 /* CityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityView.h; sourceTree = "<group>"; };
 		22DFC3F01BBE18880028D868 /* UIBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBase.cpp; sourceTree = "<group>"; };
 		22DFC3F11BBE18880028D868 /* UIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBase.h; sourceTree = "<group>"; };
+		22DFC3F31BBFD6FA0028D868 /* BButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BButton.cpp; sourceTree = "<group>"; };
+		22DFC3F41BBFD6FA0028D868 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		46880B7619C43A67006E1F66 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
@@ -288,7 +291,6 @@
 			children = (
 				223F113A1BBA2FBA00182984 /* BBase.cpp */,
 				223F113B1BBA2FBA00182984 /* BBase.h */,
-				223F113C1BBA2FBA00182984 /* common.h */,
 				223F113D1BBA2FBA00182984 /* game.cpp */,
 				223F113E1BBA2FBA00182984 /* GameClient.cpp */,
 				223F113F1BBA2FBA00182984 /* GameClient.h */,
@@ -320,6 +322,8 @@
 				22DFC3EE1BBE105C0028D868 /* CityView.h */,
 				22DFC3F01BBE18880028D868 /* UIBase.cpp */,
 				22DFC3F11BBE18880028D868 /* UIBase.h */,
+				22DFC3F31BBFD6FA0028D868 /* BButton.cpp */,
+				22DFC3F41BBFD6FA0028D868 /* BButton.h */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -387,6 +391,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				223F113C1BBA2FBA00182984 /* common.h */,
 				22DFC3EC1BBE0ECE0028D868 /* util */,
 				223F11611BBBD6B400182984 /* GameScene.cpp */,
 				223F11621BBBD6B400182984 /* GameScene.h */,
@@ -589,6 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DFC3F51BBFD6FA0028D868 /* BButton.cpp in Sources */,
 				223F114D1BBA2FBA00182984 /* GameClient.cpp in Sources */,
 				223F114F1BBA2FBA00182984 /* Logger.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,

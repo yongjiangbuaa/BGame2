@@ -19,7 +19,6 @@ bool CityView::init()
     }
     //色块
     LayerColor* color = LayerColor::create(Color4B::GRAY, 300, 300);
-    color->setPosition(Director::getInstance()->getVisibleOrigin().x,Director::getInstance()->getVisibleOrigin().y);
     this->addChild(color);
     return true;
 

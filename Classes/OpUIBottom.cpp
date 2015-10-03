@@ -24,24 +24,21 @@ bool OpUIBottom::init()
     }
     
     //色块
-    LayerColor* color = LayerColor::create(Color4B::GREEN,90,50);
-    color->setPosition(Director::getInstance()->getVisibleOrigin().x,Director::getInstance()->getVisibleOrigin().y);
-    this->addChild(color);
-    /**
+    LayerColor* bgColor = LayerColor::create(Color4B::GREEN,750,150);
+    this->addChild(bgColor);
     
-    city = MenuItemSprite::create(LayerColor::create(Color4B::GREEN,50,50),LayerColor::create(Color4B::BLUE,50,50));
+    city = MenuItemSprite::create(LayerColor::create(Color4B::BLUE,140,140),LayerColor::create(Color4B::RED,140,140), LayerColor::create(Color4B::GRAY,140,140), CC_CALLBACK_1(OpUIBottom::menuCityCallback, this));
     
-    role = MenuItemSprite::create(LayerColor::create(Color4B::GREEN,50,50),LayerColor::create(Color4B::BLUE,50,50));
+    role = MenuItemSprite::create(LayerColor::create(Color4B::BLUE,140,140),LayerColor::create(Color4B::RED,140,140), LayerColor::create(Color4B::GRAY,140,140), CC_CALLBACK_1(OpUIBottom::menuRoleCallback, this));
 
     city->setPosition(0,0);
-    role->setPosition(100,0);
+    role->setPosition(150,0);
     
     // create menu, it's an autorelease object
-    auto menu = Menu::create(city,role, NULL);
-    menu->setPosition(Vect::ZERO);
+    Menu* menu = Menu::create(city,role, NULL);
+    menu->setPosition(75,75);
     this->addChild(menu, 1);
 
-    **/
     
     return true;
 }
