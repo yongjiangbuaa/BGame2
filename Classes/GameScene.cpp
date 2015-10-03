@@ -55,10 +55,11 @@ bool GameScene::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     Size winSize = Director::getInstance()->getWinSize();
+    Size winSizeInPx = Director::getInstance()->getWinSizeInPixels();
     CCLOG("visibleSize x=%f  y=%f",visibleSize.width,visibleSize.height);
     CCLOG("visibleOrigin length=%f",origin.length());
     CCLOG("winSize x=%f  y=%f",winSize.width,winSize.height);
-    
+    CCLOG("winSizeInPx x=%f  y=%f",winSizeInPx.width,winSizeInPx.height);
     
     GameWorld::shared()->InitializeGameWorld();
     m_CenterContainer = Node::create();

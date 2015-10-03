@@ -34,24 +34,22 @@ static int register_all_packages()
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
+    
+  
     // initialize director
     auto director = Director::getInstance();
-    auto glview = director->getOpenGLView();
-    if(!glview) {
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
-        glview = GLViewImpl::createWithRect("BGame2", Rect(0, 0, designResolutionSize.width, designResolutionSize.height));
-#else
-        glview = GLViewImpl::create("BGame2");
-#endif
-        director->setOpenGLView(glview);
-    }
+      initScreenScale();
+    
+   
 
     // turn on display FPS
     director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
-
+    
+  
+    /**
     // Set the design resolution
     glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
     Size frameSize = glview->getFrameSize();
@@ -72,6 +70,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     register_all_packages();
+     
+     **/
 
     // create a scene. it's an autorelease object
     //auto scene = HelloWorld::createScene();
@@ -82,6 +82,35 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->runWithScene(scene);
 
     return true;
+}
+
+
+void AppDelegate::initScreenScale()
+{
+    Size sWin = Director::getInstance()->getWinSizeInPixels();
+    Size sDesign = Size(sWin.width, sWin.height);
+    
+    float r = sWin.height / sWin.width;
+    if(sDesign.width>1024) sDesign.width = 1024;
+    if(sDesign.width<960) sDesign.width = 960;
+    
+    sDesign.height = sDesign.width * r;
+    
+    
+    
+    auto glview = Director::getInstance()->getOpenGLView();
+    if(!glview) {
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
+        glview = GLViewImpl::createWithRect("BGame2", Rect(0, 0, sDesign.width, sDesign.height));
+#else
+        glview = GLViewImpl::create("BGame2");
+#endif
+        Director::getInstance()->setOpenGLView(glview);
+    }
+    
+    //CCEGLView::sharedOpenGLView()->setDesignResolutionSize(sDesign.width, sDesign.height, kResolutionShowAll);
+    
+    
 }
 
 // This function will be called when the app is inactive. When comes a phone call,it's be invoked too
