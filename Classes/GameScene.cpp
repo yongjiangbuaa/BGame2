@@ -54,16 +54,21 @@ bool GameScene::init()
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
+    Size winSize = Director::getInstance()->getWinSize();
     CCLOG("visibleSize x=%f  y=%f",visibleSize.width,visibleSize.height);
     CCLOG("visibleOrigin length=%f",origin.length());
+    CCLOG("winSize x=%f  y=%f",winSize.width,winSize.height);
+    
     
     GameWorld::shared()->InitializeGameWorld();
     m_CenterContainer = Node::create();
+    
     this->m_BottomUI = OpUIBottom::create();
     this->m_CityView = CityView::create();
     this->m_RoleView = RoleView::create();
 
+    
+    
     
     
     //默认显示RoleView 隐藏其他
@@ -73,6 +78,9 @@ bool GameScene::init()
     //把节点挂在树上
     m_CenterContainer->addChild(m_CityView);
     m_CenterContainer->addChild(m_RoleView);
+    
+    //m_CenterContainer->setPosition(90,160);
+    //m_BottomUI->setPosition(160,160);
     this->addChild(m_CenterContainer);
     this->addChild(m_BottomUI);
 

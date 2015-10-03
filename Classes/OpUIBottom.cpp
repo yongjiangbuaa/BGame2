@@ -24,7 +24,8 @@ bool OpUIBottom::init()
     }
     
     //色块
-    LayerColor* color = LayerColor::create(Color4B::GREEN,100,100);
+    LayerColor* color = LayerColor::create(Color4B::GREEN,90,50);
+    color->setPosition(Director::getInstance()->getVisibleOrigin().x,Director::getInstance()->getVisibleOrigin().y);
     this->addChild(color);
     /**
     
