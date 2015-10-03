@@ -38,9 +38,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
   
     // initialize director
     auto director = Director::getInstance();
-      initScreenScale();
-    
-   
+    //初始化屏幕缩放相关参数
+    initScreenScale();
 
     // turn on display FPS
     director->setDisplayStats(true);
@@ -48,31 +47,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
     
-  
-    /**
-    // Set the design resolution
-    glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
-    Size frameSize = glview->getFrameSize();
-    // if the frame's height is larger than the height of medium size.
-    if (frameSize.height > mediumResolutionSize.height)
-    {        
-        director->setContentScaleFactor(MIN(largeResolutionSize.height/designResolutionSize.height, largeResolutionSize.width/designResolutionSize.width));
-    }
-    // if the frame's height is larger than the height of small size.
-    else if (frameSize.height > smallResolutionSize.height)
-    {        
-        director->setContentScaleFactor(MIN(mediumResolutionSize.height/designResolutionSize.height, mediumResolutionSize.width/designResolutionSize.width));
-    }
-    // if the frame's height is smaller than the height of medium size.
-    else
-    {        
-        director->setContentScaleFactor(MIN(smallResolutionSize.height/designResolutionSize.height, smallResolutionSize.width/designResolutionSize.width));
-    }
-
-    register_all_packages();
-     
-     **/
-
     // create a scene. it's an autorelease object
     //auto scene = HelloWorld::createScene();
     auto scene = abc::GameScene::createScene();
@@ -91,10 +65,10 @@ void AppDelegate::initScreenScale()
     Size sDesign = Size(sWin.width, sWin.height);
     
     float r = sWin.height / sWin.width;
-    if(sDesign.width>1024) sDesign.width = 1024;
-    if(sDesign.width<960) sDesign.width = 960;
+    if(sDesign.height>1024) sDesign.height = 1024;
+    if(sDesign.height<960) sDesign.height = 960;
     
-    sDesign.height = sDesign.width * r;
+    sDesign.width = sDesign.height / r;
     
     
     
