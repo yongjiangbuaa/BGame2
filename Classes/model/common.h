@@ -35,6 +35,12 @@ NS_B_BEGIN
 
 typedef std::function<void(Ref*)> bCallback;
 
+
+//屏幕显示常量  宽高
+#define SCREEN_WIDTH   Director::getInstance()->getWinSizeInPixels().width 
+#define SCREEN_HEIGHT  Director::getInstance()->getWinSizeInPixels().height
+
+
 NS_B_END
 
 #endif				 

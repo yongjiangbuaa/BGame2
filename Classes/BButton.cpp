@@ -7,3 +7,14 @@
 //
 
 #include "BButton.h"
+
+
+NS_B_BEGIN
+
+BButton* BButton::createMenuButton()
+{
+    return NULL;
+}
+
+
+NS_B_END

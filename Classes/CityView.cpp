@@ -18,7 +18,7 @@ bool CityView::init()
         return false;
     }
     //色块
-    LayerColor* color = LayerColor::create(Color4B::GRAY, 300, 300);
+    LayerColor* color = LayerColor::create(Color4B::GRAY, SCREEN_WIDTH, SCREEN_HEIGHT);
     this->addChild(color);
     return true;
 

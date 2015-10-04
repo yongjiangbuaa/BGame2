@@ -24,11 +24,12 @@ public:
     
     MenuItem* city;
     MenuItem* role;
-    Node* combat;
-    Node* ventory;
+    MenuItem* combat;
+    MenuItem* ventory;
     // a selector callback
     void menuCityCallback(cocos2d::Ref* pSender);
     void menuRoleCallback(cocos2d::Ref* pSender);
+    
     
 private:
     

@@ -18,10 +18,13 @@ class BButton : public Node
 public:
     CREATE_FUNC(BButton);
     static BButton* create(Sprite* sprite,Sprite* selectSprite,const bCallback& callback);
-    static BButton* create(string filename,string selectImgFilename,const bCallback& callback);
+    static BButton* create(string filename,string btn_title,const bCallback& callback);
     void setSprite(Sprite* sprite);
     void setSelectedSprite(Sprite* sprite);
     void setCallbackFunc(const bCallback& callback);
+    
+    static BButton* createMenuButton();
+
 private:
     
 };

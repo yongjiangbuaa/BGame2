@@ -24,12 +24,14 @@ bool OpUIBottom::init()
     }
     
     //色块
-    LayerColor* bgColor = LayerColor::create(Color4B::GREEN,750,150);
+    LayerColor* bgColor = LayerColor::create(Color4B::GREEN,SCREEN_WIDTH,SCREEN_WIDTH/5);
     this->addChild(bgColor);
     
     city = MenuItemSprite::create(LayerColor::create(Color4B::BLUE,140,140),LayerColor::create(Color4B::RED,140,140), LayerColor::create(Color4B::GRAY,140,140), CC_CALLBACK_1(OpUIBottom::menuCityCallback, this));
     
     role = MenuItemSprite::create(LayerColor::create(Color4B::BLUE,140,140),LayerColor::create(Color4B::RED,140,140), LayerColor::create(Color4B::GRAY,140,140), CC_CALLBACK_1(OpUIBottom::menuRoleCallback, this));
+    
+    
 
     city->setPosition(0,0);
     role->setPosition(150,0);
