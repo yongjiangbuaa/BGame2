@@ -6,18 +6,31 @@
 //
 //
 
-#ifndef __BGame2__RoleScene__
-#define __BGame2__RoleScene__
+#ifndef __BGame2__RoleView__
+#define __BGame2__RoleView__
 
 
 #include "common.h"
 #include "UIBase.h"
+#include "BButton.h"
 
 NS_B_BEGIN
 
 class RoleView : public UIBase
 {
 public:
+    
+    BButton* slot1;
+    BButton* slot2;
+    BButton* slot3;
+    BButton* slot4;
+    BButton* slot5;
+    BButton* slot6;
+    BButton* slot7;
+    BButton* slot8;
+    BButton* slot9;
+    BButton* slot10;
+    
     virtual bool init();
     // implement the "static create()" method manually
     CREATE_FUNC(RoleView);

@@ -4,7 +4,7 @@
 //
 //  Created by gengyj on 15-10-2.
 //
-//
+//  UI界面的主框架 用底部按钮及其他按钮导航
 
 #ifndef __BGame2__UIBase__
 #define __BGame2__UIBase__

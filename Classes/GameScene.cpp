@@ -11,6 +11,8 @@
 #include "OpUIBottom.h"
 #include "CityView.h"
 #include "RoleView.h"
+#include "CombatView.h"
+#include "VentoryView.h"
 #include "Role.h"
 #include "UIBase.h"
 
@@ -65,21 +67,24 @@ bool GameScene::init()
     GameWorld::shared()->InitializeGameWorld();
     m_CenterContainer = Node::create();
     
-    this->m_BottomUI = OpUIBottom::create();
-    this->m_CityView = CityView::create();
-    this->m_RoleView = RoleView::create();
-
+    m_BottomUI = OpUIBottom::create();
+    m_CityView = CityView::create();
+    m_RoleView = RoleView::create();
+    m_CombatView = CombatView::create();
+    m_VentoryView = VentoryView::create();
     
     
     
     
     //默认显示RoleView 隐藏其他
-    m_RoleView->setVisible(true);
-    m_CityView->setVisible(true);
+    //m_RoleView->setVisible(true);
+    //m_CityView->setVisible(true);
     
     //把节点挂在树上
     m_CenterContainer->addChild(m_CityView);
     m_CenterContainer->addChild(m_RoleView);
+    m_CenterContainer->addChild(m_CombatView);
+    m_CenterContainer->addChild(m_VentoryView);
     
     //m_CenterContainer->setPosition(90,160);
     //m_BottomUI->setPosition(160,160);
@@ -93,7 +98,7 @@ bool GameScene::init()
     
     
     //跳往默认界面
-    //showUI(m_RoleView);
+    showUI(m_RoleView);
     
     return true;
 }

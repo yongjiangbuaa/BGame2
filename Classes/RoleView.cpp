@@ -21,8 +21,18 @@ bool RoleView::init()
     
     
     //色块
-    LayerColor* color = LayerColor::create(Color4B::BLUE,SCREEN_WIDTH,SCREEN_HEIGHT);
-    this->addChild(color);
+    LayerColor* layer = LayerColor::create(Color4B::WHITE,SCREEN_WIDTH,SCREEN_HEIGHT);
+    this->addChild(layer);
+    
+    
+    //增加背景图，增加按钮，调整位置这些事。可以在ccb里完成
+    
+    //也可以代码完成
+    LayerColor* portrait = LayerColor::create(Color4B::GRAY,SCREEN_WIDTH-150,SCREEN_HEIGHT-150);
+    this->addChild(portrait);
+    
+    
+    
     return true;
 }
 

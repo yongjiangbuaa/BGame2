@@ -29,7 +29,9 @@ public:
     // a selector callback
     void menuCityCallback(cocos2d::Ref* pSender);
     void menuRoleCallback(cocos2d::Ref* pSender);
-    
+    void menuCombatCallback(cocos2d::Ref* pSender);
+    void menuVentoryCallback(cocos2d::Ref* pSender);
+    void menuItemClkCallback(cocos2d::Ref* pSender);
     
 private:
     

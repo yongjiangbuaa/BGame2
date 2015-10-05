@@ -25,6 +25,8 @@ public:
     Node* m_BottomUI;
     UIBase* m_CityView;
     UIBase* m_RoleView;
+    UIBase* m_CombatView;
+    UIBase* m_VentoryView;
     Node* m_CenterContainer;//仅仅用于统一位置
     static GameScene* shared();
     void showUI(UIBase* ui);

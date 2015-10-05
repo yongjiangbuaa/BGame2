@@ -25,6 +25,8 @@
 		22DFC3EF1BBE105C0028D868 /* CityView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3ED1BBE105C0028D868 /* CityView.cpp */; };
 		22DFC3F21BBE18880028D868 /* UIBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F01BBE18880028D868 /* UIBase.cpp */; };
 		22DFC3F51BBFD6FA0028D868 /* BButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F31BBFD6FA0028D868 /* BButton.cpp */; };
+		22DFC3F81BC234770028D868 /* VentoryView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F61BC234770028D868 /* VentoryView.cpp */; };
+		22DFC3FB1BC2348C0028D868 /* CombatView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F91BC2348C0028D868 /* CombatView.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
@@ -153,6 +155,10 @@
 		22DFC3F11BBE18880028D868 /* UIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBase.h; sourceTree = "<group>"; };
 		22DFC3F31BBFD6FA0028D868 /* BButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BButton.cpp; sourceTree = "<group>"; };
 		22DFC3F41BBFD6FA0028D868 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
+		22DFC3F61BC234770028D868 /* VentoryView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VentoryView.cpp; sourceTree = "<group>"; };
+		22DFC3F71BC234770028D868 /* VentoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentoryView.h; sourceTree = "<group>"; };
+		22DFC3F91BC2348C0028D868 /* CombatView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CombatView.cpp; sourceTree = "<group>"; };
+		22DFC3FA1BC2348C0028D868 /* CombatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombatView.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		46880B7619C43A67006E1F66 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
@@ -324,6 +330,10 @@
 				22DFC3F11BBE18880028D868 /* UIBase.h */,
 				22DFC3F31BBFD6FA0028D868 /* BButton.cpp */,
 				22DFC3F41BBFD6FA0028D868 /* BButton.h */,
+				22DFC3F61BC234770028D868 /* VentoryView.cpp */,
+				22DFC3F71BC234770028D868 /* VentoryView.h */,
+				22DFC3F91BC2348C0028D868 /* CombatView.cpp */,
+				22DFC3FA1BC2348C0028D868 /* CombatView.h */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -600,11 +610,13 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				223F11511BBA2FBA00182984 /* Role.cpp in Sources */,
 				223F114E1BBA2FBA00182984 /* GameWolrd.cpp in Sources */,
+				22DFC3F81BC234770028D868 /* VentoryView.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				223F11631BBBD6B400182984 /* GameScene.cpp in Sources */,
 				223F11501BBA2FBA00182984 /* Map.cpp in Sources */,
 				22DFC3EF1BBE105C0028D868 /* CityView.cpp in Sources */,
 				223F11521BBA2FBA00182984 /* Ventory.cpp in Sources */,
+				22DFC3FB1BC2348C0028D868 /* CombatView.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				223F115C1BBBC5B300182984 /* BattlePlayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,

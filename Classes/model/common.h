@@ -41,6 +41,11 @@ typedef std::function<void(Ref*)> bCallback;
 #define SCREEN_HEIGHT  Director::getInstance()->getWinSizeInPixels().height
 
 
+//常规按钮
+#define MENU_BTN_BLUE LayerColor::create(Color4B::BLUE,140,140)
+#define MENU_BTN_RED LayerColor::create(Color4B::RED,140,140)
+#define MENU_BTN_GRAY LayerColor::create(Color4B::GRAY,140,140)
+
 NS_B_END
 
 #endif				 
