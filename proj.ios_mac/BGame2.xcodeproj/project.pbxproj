@@ -22,6 +22,9 @@
 		223F11591BBB8A1F00182984 /* OpUIBottom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 223F11571BBB8A1F00182984 /* OpUIBottom.cpp */; };
 		223F115C1BBBC5B300182984 /* BattlePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 223F115A1BBBC5B300182984 /* BattlePlayer.cpp */; };
 		223F11631BBBD6B400182984 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 223F11611BBBD6B400182984 /* GameScene.cpp */; };
+		22C0100B1BC66D3C00A6002C /* BSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C010091BC66D3C00A6002C /* BSprite.cpp */; };
+		22C0100E1BC6781400A6002C /* BReadCCBI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C0100C1BC6781400A6002C /* BReadCCBI.cpp */; };
+		22C010111BC6797400A6002C /* BBaseCCBOwner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C0100F1BC6797400A6002C /* BBaseCCBOwner.cpp */; };
 		22DFC3EF1BBE105C0028D868 /* CityView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3ED1BBE105C0028D868 /* CityView.cpp */; };
 		22DFC3F21BBE18880028D868 /* UIBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F01BBE18880028D868 /* UIBase.cpp */; };
 		22DFC3F51BBFD6FA0028D868 /* BButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F31BBFD6FA0028D868 /* BButton.cpp */; };
@@ -149,6 +152,12 @@
 		223F115B1BBBC5B300182984 /* BattlePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattlePlayer.h; sourceTree = "<group>"; };
 		223F11611BBBD6B400182984 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		223F11621BBBD6B400182984 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		22C010091BC66D3C00A6002C /* BSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BSprite.cpp; sourceTree = "<group>"; };
+		22C0100A1BC66D3C00A6002C /* BSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSprite.h; sourceTree = "<group>"; };
+		22C0100C1BC6781400A6002C /* BReadCCBI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BReadCCBI.cpp; sourceTree = "<group>"; };
+		22C0100D1BC6781400A6002C /* BReadCCBI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BReadCCBI.h; sourceTree = "<group>"; };
+		22C0100F1BC6797400A6002C /* BBaseCCBOwner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBaseCCBOwner.cpp; sourceTree = "<group>"; };
+		22C010101BC6797400A6002C /* BBaseCCBOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBaseCCBOwner.h; sourceTree = "<group>"; };
 		22DFC3ED1BBE105C0028D868 /* CityView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CityView.cpp; sourceTree = "<group>"; };
 		22DFC3EE1BBE105C0028D868 /* CityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityView.h; sourceTree = "<group>"; };
 		22DFC3F01BBE18880028D868 /* UIBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBase.cpp; sourceTree = "<group>"; };
@@ -334,6 +343,12 @@
 				22DFC3F71BC234770028D868 /* VentoryView.h */,
 				22DFC3F91BC2348C0028D868 /* CombatView.cpp */,
 				22DFC3FA1BC2348C0028D868 /* CombatView.h */,
+				22C010091BC66D3C00A6002C /* BSprite.cpp */,
+				22C0100A1BC66D3C00A6002C /* BSprite.h */,
+				22C0100C1BC6781400A6002C /* BReadCCBI.cpp */,
+				22C0100D1BC6781400A6002C /* BReadCCBI.h */,
+				22C0100F1BC6797400A6002C /* BBaseCCBOwner.cpp */,
+				22C010101BC6797400A6002C /* BBaseCCBOwner.h */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -606,15 +621,18 @@
 			files = (
 				22DFC3F51BBFD6FA0028D868 /* BButton.cpp in Sources */,
 				223F114D1BBA2FBA00182984 /* GameClient.cpp in Sources */,
+				22C010111BC6797400A6002C /* BBaseCCBOwner.cpp in Sources */,
 				223F114F1BBA2FBA00182984 /* Logger.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				223F11511BBA2FBA00182984 /* Role.cpp in Sources */,
 				223F114E1BBA2FBA00182984 /* GameWolrd.cpp in Sources */,
 				22DFC3F81BC234770028D868 /* VentoryView.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				22C0100E1BC6781400A6002C /* BReadCCBI.cpp in Sources */,
 				223F11631BBBD6B400182984 /* GameScene.cpp in Sources */,
 				223F11501BBA2FBA00182984 /* Map.cpp in Sources */,
 				22DFC3EF1BBE105C0028D868 /* CityView.cpp in Sources */,
+				22C0100B1BC66D3C00A6002C /* BSprite.cpp in Sources */,
 				223F11521BBA2FBA00182984 /* Ventory.cpp in Sources */,
 				22DFC3FB1BC2348C0028D868 /* CombatView.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
@@ -675,6 +693,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../cocos2d/cocos/editor-support/cocosbuilder",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -709,6 +728,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
 					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../cocos2d/cocos/editor-support/cocosbuilder",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;

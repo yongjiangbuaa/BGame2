@@ -5,13 +5,14 @@
 // 系统级
 #include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocosbuilder.h"
 #include <vector>
 #include <map>
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 using namespace std;
-
+using namespace cocosbuilder;
 //BGame项目的命名空间
 
 #define NS_B_BEGIN namespace abc {  
