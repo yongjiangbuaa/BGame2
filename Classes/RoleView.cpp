@@ -107,4 +107,16 @@ void RoleView::onExit()
 {
     
 }
+
+
+void RoleView::tick(float delta)
+{
+    
+}
+
+void RoleView::update(float delta)
+{
+    
+}
+
 NS_B_END

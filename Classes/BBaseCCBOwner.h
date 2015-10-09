@@ -11,6 +11,8 @@
 
 #include "common.h"
 
+NS_B_BEGIN
+
 class BBaseCCBOwner
 : public Layer     //有的ccb可能是Node，所以用基类
 {
@@ -71,4 +73,6 @@ protected:
     CCBAnimationManager* m_pAnimationManager;
     
 };
+
+NS_B_END
 #endif /* defined(__BGame2__BBaseCCBOwner__) */

@@ -8,10 +8,13 @@
 
 #include "BReadCCBI.h"
 NS_B_BEGIN
+
+
+
 ///读取ccbi文件, 并调用Owner 的 initUIReadOver
-CCNode* BReadCCBI::read(const char *pCCBFileName, CCNode *pParent, BBaseCCBOwner *pOwner, int nTag, const int zOrder, bool hasAnimation)
+Node* BReadCCBI::read(const char *pCCBFileName, Node *pParent, BBaseCCBOwner *pOwner, int nTag, const int zOrder, bool hasAnimation)
 {
-    NodeLoaderLibrary *lib = NodeLoaderLibrary::sharedNodeLoaderLibrary();    //生成一个默认的Node Loader
+    NodeLoaderLibrary *lib = NodeLoaderLibrary::getInstance();    //生成一个默认的Node Loader
     
     CCBReader *reader = new CCBReader(lib); //用node load lib 初始化一个ccb reader
     reader->setCCBRootPath("ccbResources/");
