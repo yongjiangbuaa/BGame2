@@ -68,7 +68,7 @@ slot10(NULL)
 }
 
 RoleView* RoleView::shared()
-{
+{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     if(!s_staticRoleView)
     {
         s_staticRoleView = new RoleView();
