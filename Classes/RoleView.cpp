@@ -76,9 +76,13 @@ RoleView* RoleView::shared()
     return s_staticRoleView;
 }
 
+void RoleView::purge()
+{
+    CC_SAFE_DELETE(s_staticRoleView);
+}
+
 RoleView::~RoleView()
 {
-    
 }
 
 bool RoleView::onAssignCCBMemberVariable(Ref* pTarget, const char* pMemberVariableName, Node* pNode)

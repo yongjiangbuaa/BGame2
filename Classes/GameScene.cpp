@@ -50,6 +50,8 @@ GameScene* GameScene::shared()
     return s_sharedGameScene;
     
 }
+
+
 bool GameScene::init()
 {
     
@@ -69,7 +71,7 @@ bool GameScene::init()
     
     m_BottomUI = OpUIBottom::create();
     m_CityView = CityView::create();
-    m_RoleView = RoleView::create();
+    m_RoleView = RoleView::shared(); 
     m_CombatView = CombatView::create();
     m_VentoryView = VentoryView::create();
     

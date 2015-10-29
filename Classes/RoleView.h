@@ -21,7 +21,7 @@ class RoleView : public UIBase
 public:
     RoleView();
     static RoleView * shared();
-    void purge();
+    virtual void purge();
     
     virtual bool onAssignCCBMemberVariable(Ref* pTarget, const char* pMemberVariableName, Node* pNode);
     

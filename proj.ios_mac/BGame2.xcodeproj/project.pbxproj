@@ -25,6 +25,8 @@
 		22C0100B1BC66D3C00A6002C /* BSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C010091BC66D3C00A6002C /* BSprite.cpp */; };
 		22C0100E1BC6781400A6002C /* BReadCCBI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C0100C1BC6781400A6002C /* BReadCCBI.cpp */; };
 		22C010111BC6797400A6002C /* BBaseCCBOwner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C0100F1BC6797400A6002C /* BBaseCCBOwner.cpp */; };
+		22DF328F1BDF255D00906BD8 /* ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 22DF328E1BDF255D00906BD8 /* ccbi */; };
+		22DF32911BDF257300906BD8 /* ccbResources in Resources */ = {isa = PBXBuildFile; fileRef = 22DF32901BDF257300906BD8 /* ccbResources */; };
 		22DFC3EF1BBE105C0028D868 /* CityView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3ED1BBE105C0028D868 /* CityView.cpp */; };
 		22DFC3F21BBE18880028D868 /* UIBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F01BBE18880028D868 /* UIBase.cpp */; };
 		22DFC3F51BBFD6FA0028D868 /* BButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22DFC3F31BBFD6FA0028D868 /* BButton.cpp */; };
@@ -158,6 +160,8 @@
 		22C0100D1BC6781400A6002C /* BReadCCBI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BReadCCBI.h; sourceTree = "<group>"; };
 		22C0100F1BC6797400A6002C /* BBaseCCBOwner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BBaseCCBOwner.cpp; sourceTree = "<group>"; };
 		22C010101BC6797400A6002C /* BBaseCCBOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBaseCCBOwner.h; sourceTree = "<group>"; };
+		22DF328E1BDF255D00906BD8 /* ccbi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccbi; sourceTree = "<group>"; };
+		22DF32901BDF257300906BD8 /* ccbResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccbResources; sourceTree = "<group>"; };
 		22DFC3ED1BBE105C0028D868 /* CityView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CityView.cpp; sourceTree = "<group>"; };
 		22DFC3EE1BBE105C0028D868 /* CityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityView.h; sourceTree = "<group>"; };
 		22DFC3F01BBE18880028D868 /* UIBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIBase.cpp; sourceTree = "<group>"; };
@@ -403,6 +407,8 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				22DF32901BDF257300906BD8 /* ccbResources */,
+				22DF328E1BDF255D00906BD8 /* ccbi */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
@@ -578,9 +584,11 @@
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
+				22DF328F1BDF255D00906BD8 /* ccbi in Resources */,
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
+				22DF32911BDF257300906BD8 /* ccbResources in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,

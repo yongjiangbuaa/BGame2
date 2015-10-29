@@ -32,7 +32,7 @@
 				<key>displayName</key>
 				<string>zhuangbeikuang1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>slot1</string>
 				<key>memberVarAssignmentType</key>
 				<integer>0</integer>
 				<key>properties</key>
@@ -165,6 +165,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
@@ -176,7 +178,7 @@
 				<key>displayName</key>
 				<string>zhuangbeikuang1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>slot9</string>
 				<key>memberVarAssignmentType</key>
 				<integer>0</integer>
 				<key>properties</key>
@@ -248,7 +250,7 @@
 				<key>displayName</key>
 				<string>zhuangbeikuang1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>slot8</string>
 				<key>memberVarAssignmentType</key>
 				<integer>0</integer>
 				<key>properties</key>
@@ -320,7 +322,7 @@
 				<key>displayName</key>
 				<string>zhuangbeikuang1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>slot7</string>
 				<key>memberVarAssignmentType</key>
 				<integer>0</integer>
 				<key>properties</key>
@@ -392,7 +394,7 @@
 				<key>displayName</key>
 				<string>zhuangbeikuang1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>slot5</string>
 				<key>memberVarAssignmentType</key>
 				<integer>0</integer>
 				<key>properties</key>
@@ -464,7 +466,7 @@
 				<key>displayName</key>
 				<string>zhuangbeikuang1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>slot4</string>
 				<key>memberVarAssignmentType</key>
 				<integer>0</integer>
 				<key>properties</key>
@@ -536,7 +538,7 @@
 				<key>displayName</key>
 				<string>zhuangbeikuang1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>slot3</string>
 				<key>memberVarAssignmentType</key>
 				<integer>0</integer>
 				<key>properties</key>
@@ -608,7 +610,7 @@
 				<key>displayName</key>
 				<string>zhuangbeikuang1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>slot2</string>
 				<key>memberVarAssignmentType</key>
 				<integer>0</integer>
 				<key>properties</key>
@@ -620,7 +622,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>40</real>
+							<real>39</real>
 							<real>300</real>
 							<integer>0</integer>
 						</array>
@@ -680,7 +682,7 @@
 				<key>displayName</key>
 				<string>zhuangbeikuang1</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>slot6</string>
 				<key>memberVarAssignmentType</key>
 				<integer>0</integer>
 				<key>properties</key>
